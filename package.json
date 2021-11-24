@@ -1,0 +1,8 @@
+{
+    "scripts": {
+        "gen": "ergogen ergogen/squircle.yaml --output ergogen/output"
+    },
+    "dependencies": {
+        "ergogen": "github:MvEerd/ergogen#mveerd"
+    }
+}
