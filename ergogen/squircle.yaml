@@ -7,8 +7,8 @@ units:
   pinky_spread: 1cx # mm, relative to previous column
 
   ring_rotation: 3
-  ring_stagger: 0.5cy
-  ring_spread: 1.2cx
+  ring_stagger: 0.45cy
+  ring_spread: 1.1cx
 
   middle_rotation: 0
   middle_stagger: 1
@@ -21,6 +21,10 @@ units:
   inner_rotation: -2
   inner_stagger: -5
   inner_spread: 1cx
+
+  usb_cutout_x:  47
+  usb_cutout_y: -1.27
+  usb_cutout_r: -15.5
 
   # Constants
   choc_cap_x: 17.5
@@ -48,9 +52,11 @@ points:
           from: =key_net
           to: GND
         params:
-          keycaps: true
-          reverse: true
+          reverse: false
           hotswap: true
+          # Don't show a model for this since 'choc' already loads the model
+          model: false
+          keycaps: false
       choc:
         type: choc
         anchor:
@@ -60,7 +66,14 @@ points:
           to: GND
         params:
           keycaps: true
-          reverse: true
+          reverse: false
+      # A trace to connect each hotswap socket with a pin hole
+      trace:
+        type: trace
+        params:
+          side: B
+          start: [-3.275, -5.95]
+          end: [-5, 4.1]
   zones:
     alphas:
       rows:
@@ -81,7 +94,20 @@ points:
           rows:
             bottom.key_net: P110
             home.key_net: P111
-            top.skip: true
+            top:
+              key_net: test
+              footprints:
+                choc: $unset
+                trace: $unset
+                choc_hotswap: $unset
+                encoder:
+                  type: rotary
+                  nets:
+                    from: =key_net
+                    to: GND
+                    A: TODO3
+                    B: GND
+                    C: TODO4
         ring:
           rotate: ring_rotation - pinky_rotation
           stagger: ring_stagger
@@ -138,6 +164,7 @@ points:
             key_net: P021
             footprints.choc.anchor.rotate: 270
             footprints.choc_hotswap.anchor.rotate: 90
+            footprints.trace.anchor.rotate: 90
       rows:
         thumb:
           padding: 0
@@ -161,37 +188,34 @@ outlines:
         anchor:
           ref: alphas_middle_bottom
           shift: [0, 0]
+    _usb_c_cutout:
+      - type: rectangle
+        size: [9.28, 6.67]
+        anchor: &usbanchor
+          ref: alphas_middle_top
+          shift: [ usb_cutout_x, usb_cutout_y ]
+          rotate: usb_cutout_r
     # Make a crescent by overlapping two circles then cut the main body with a third circle
-    _combined: [
+    _main: [
         +_top_arch_circle,
         -_bottom_arch_circle,
         ~_main_body_circle
     ]
-    combined:
+    _fillet:
       - type: outline
-        name: _combined
+        name: _main
         fillet: 6
-    switch_cutouts:
+    combined: [
+        _fillet,
+        -_usb_c_cutout
+    ]
+    _switch_cutouts:
       - type: keys
         side: left
         size: 14 # Plate cutouts are 14mm * 14mm for both MX and Choc
         bound: false
     switch_plate:
-      [ combined, -switch_cutouts]
-    _choc_keycap_outlines:
-      - type: keys
-        side: left
-        size: [choc_cap_x, choc_cap_y]
-        bound: false
-        tags: [1u]
-    _choc_keycap_outlines_15u:
-      - type: keys
-        side: left
-        size: [choc_cap_y, 1.5choc_cap_x]
-        bound: false
-        tags: [15u]
-    keycaps_preview:
-      [ _choc_keycap_outlines, _choc_keycap_outlines_15u]
+      [ combined, -_switch_cutouts]
 cases:
   switchplate:
     - type: outline
@@ -211,16 +235,23 @@ pcbs:
         type: holyiot
         anchor:
           ref: alphas_middle_home
-          shift: [60, -18]
+          shift: [60.59, -17.9]
           rotate: 270
         nets:
           P018: RST
+      usbc:
+        type: usbc
+        anchor:
+          <<: *usbanchor
+          shift: [usb_cutout_x + 6.24, usb_cutout_y + 5.15]
+        nets:
+          from: GND
       reset:
         type: tactswitch
         anchor:
-          ref: alphas_inner_top
-          shift: [43, -10]
-          rotate: 0
+          ref: alphas_middle_top
+          shift: [60, -5]
+          rotate: 74.5 + 180
         nets:
           from: GND
           to: RST
@@ -235,7 +266,7 @@ pcbs:
       groundfill:
         type: rawkicad
         params:
-          data: '(zone (net 2) (net_name "GND") (layers F&B.Cu) (tstamp 9f9e43f1-b8a6-44c2-ac1e-7dffea579c90) (hatch edge 0.508)
+          data: '(zone (net 2) (net_name "GND") (layers F&B.Cu) (hatch edge 0.508)
     (connect_pads (clearance 0.508))
     (min_thickness 0.254) (filled_areas_thickness no)
     (fill yes (thermal_gap 0.508) (thermal_bridge_width 0.508) (island_removal_mode 1) (island_area_min 0))

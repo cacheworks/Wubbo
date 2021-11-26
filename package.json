@@ -3,6 +3,6 @@
         "gen": "ergogen ergogen/squircle.yaml --output ergogen/output"
     },
     "dependencies": {
-        "ergogen": "github:MvEerd/ergogen#mveerd"
+        "ergogen": "github:MvEerd/ergogen#3d-models"
     }
 }
