@@ -226,7 +226,7 @@ cases:
       name: combined
       extrude: choc_plate_thickness
 pcbs:
-  squircle:
+  pinkeltje:
     outlines:
       main:
         outline: combined
