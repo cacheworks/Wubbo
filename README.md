@@ -1,12 +1,6 @@
-## #!/kb/pinkeltje
+## Wubbo
+34 key keyboard with the top Pinky key moved to the 6th column with a holyiot module
 
 ⚠️This keyboard is a work in progress and has not been tested yet
 
-34 key keyboard a 'pinky cluster'
-
-The PCB can be regenerated from the ergogen config files using;
-```bash
-npm install && npm run gen
-```
-
-![pinkeltje](squircle.png)
+![Wubbo](Wubbo.png)

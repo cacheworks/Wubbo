@@ -1,8 +1,8 @@
 {
     "scripts": {
-        "gen": "ergogen ergogen/squircle.yaml --output ergogen/output"
+        "gen": "ergogen ergogen/Wubbo.yaml --output ergogen-output"
     },
     "dependencies": {
-        "ergogen": "github:MvEerd/ergogen#3d-models"
+        "ergogen": "github:MvEerd/ergogen#mveerd"
     }
 }
