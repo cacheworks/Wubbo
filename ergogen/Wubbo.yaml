@@ -232,6 +232,10 @@ cases:
       name: combined
       extrude: choc_plate_thickness
 pcbs:
+  Wubbo_BottomPlate:
+    outlines:
+      main:
+        outline: _fillet
   Wubbo:
     outlines:
       main:

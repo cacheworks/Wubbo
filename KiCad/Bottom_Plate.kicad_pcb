@@ -26208,6 +26208,5 @@
   (gr_arc (start 275.733987 123.764114) (mid 284.03132 163.568151) (end 268.80522 201.269252) (layer "Edge.Cuts") (width 0.15) (tstamp c72fcd80-1de6-44b7-a66e-ef16a209414f))
   (gr_arc (start 156.412828 120.898534) (mid 209.55453 112.391711) (end 263.04053 118.362828) (layer "Edge.Cuts") (width 0.15) (tstamp ec712280-0db0-4074-8487-e2eabcb78806))
   (gr_line (start 261.309372 124.605182) (end 270.251862 127.085154) (layer "Edge.Cuts") (width 0.15) (tstamp fde3844e-a48f-4ec9-a1ca-0d79508f5e3f))
-  (target plus (at 213.486 153.042) (size 5) (width 0.05) (layer "Edge.Cuts") (tstamp de43a907-7986-43a1-85df-813a5b950da3))
 
 )
