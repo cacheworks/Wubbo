@@ -1,0 +1,8 @@
+{
+    "scripts": {
+        "gen": "ergogen ergogen/Wubbo.yaml --output ergogen-output"
+    },
+    "dependencies": {
+        "ergogen": "github:MvEerd/ergogen#mveerd"
+    }
+}
