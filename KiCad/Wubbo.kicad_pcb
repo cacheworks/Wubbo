@@ -7,7 +7,7 @@
   (paper "A3")
   (title_block
     (title "Wubbo")
-    (rev "v0.1")
+    (rev "v0.2")
     (company "cache.works")
   )
 
@@ -355,7 +355,7 @@
   (footprint "clipboard:9b7f651c-c6a4-4f53-b457-ec411c8fc700" (layer "F.Cu")
     (tedit 0) (tstamp 08061757-e97d-44f5-8d48-8244170fd8ab)
     (at -4.691213 -5.507578 5)
-    (fp_text reference "" (at 0 0 5) (layer "F.SilkS")
+    (fp_text reference "GR1" (at 0 0 5) (layer "F.SilkS")
       (effects (font (size 1.27 1.27) (thickness 0.15)))
       (tstamp f9f11cb2-e4b7-4f72-873f-cbf908dae7b3)
     )
@@ -1130,11 +1130,11 @@
     (tedit 0) (tstamp 3534c989-8b08-4bed-a893-11496885174a)
     (at 59.445876 -12.66613)
     (attr through_hole)
-    (fp_text reference "Ref**" (at 0 0) (layer "F.SilkS") hide
+    (fp_text reference "GR4" (at 0 0) (layer "F.SilkS") hide
       (effects (font (size 1.27 1.27) (thickness 0.15)))
       (tstamp 56e71047-c704-47a7-8d4d-796a4bd0cd04)
     )
-    (fp_text value "Val**" (at 0 0) (layer "F.SilkS") hide
+    (fp_text value "" (at 0 0) (layer "F.SilkS") hide
       (effects (font (size 1.27 1.27) (thickness 0.15)))
       (tstamp f01f8360-5f11-46b5-82b8-69d26342d913)
     )
@@ -4800,11 +4800,11 @@
     (tedit 0) (tstamp 5071340e-abec-4eda-9b60-b01ea27aae84)
     (at 53.48 -10.865)
     (attr through_hole)
-    (fp_text reference "Ref**" (at 0 0) (layer "F.SilkS") hide
+    (fp_text reference "GR5" (at 0 0) (layer "F.SilkS") hide
       (effects (font (size 1.27 1.27) (thickness 0.15)))
       (tstamp 12a58b46-bc9e-41b1-9b5f-59a0f40e2145)
     )
-    (fp_text value "Val**" (at 0 0) (layer "F.SilkS") hide
+    (fp_text value "" (at 0 0) (layer "F.SilkS") hide
       (effects (font (size 1.27 1.27) (thickness 0.15)))
       (tstamp c1f8e972-8adf-40f1-9963-08a4d97e6726)
     )
@@ -10013,7 +10013,7 @@
     (property "Sheetname" "")
     (path "/758a6f20-bf37-408f-80ab-13ef245228a8")
     (attr smd)
-    (fp_text reference "R4" (at 0.005 1.335 180) (layer "F.SilkS")
+    (fp_text reference "R4" (at 1.725 0.035 180) (layer "F.SilkS")
       (effects (font (size 0.6 0.6) (thickness 0.1)))
       (tstamp a61eae06-05d6-49b1-86ff-a3d5997d2a9a)
     )
@@ -10050,11 +10050,11 @@
     (tedit 0) (tstamp 53185d3b-8693-4604-8147-78243974550f)
     (at -38.049357 -11.67519)
     (attr through_hole)
-    (fp_text reference "Ref**" (at 0 0) (layer "F.SilkS") hide
+    (fp_text reference "GR3" (at 0 0) (layer "F.SilkS") hide
       (effects (font (size 1.27 1.27) (thickness 0.15)))
       (tstamp 1399a9f2-6b91-4539-90ad-ee84fd3641a7)
     )
-    (fp_text value "Val**" (at 0 0) (layer "F.SilkS") hide
+    (fp_text value "" (at 0 0) (layer "F.SilkS") hide
       (effects (font (size 1.27 1.27) (thickness 0.15)))
       (tstamp 80925646-d1d5-4a5c-b061-222045730cbf)
     )
@@ -11039,7 +11039,7 @@
     (descr "Mounting Hole 2.2mm, M2")
     (tags "mounting hole 2.2mm m2")
     (attr exclude_from_pos_files exclude_from_bom)
-    (fp_text reference "REF**" (at 0 -3.2) (layer "F.SilkS")
+    (fp_text reference "REF**" (at 0 -3.2) (layer "F.SilkS") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 3f1423f5-180a-4b41-8525-085a0e3ba396)
     )
@@ -11302,7 +11302,7 @@
     (property "Sheetname" "")
     (path "/01a66965-d01b-429f-a280-c51aa21b0356")
     (attr smd)
-    (fp_text reference "R5" (at 0.005 -1.085) (layer "F.SilkS")
+    (fp_text reference "R5" (at -0.015 1.05) (layer "F.SilkS")
       (effects (font (size 0.6 0.6) (thickness 0.1)))
       (tstamp 2f91e453-3ee0-492d-b896-ff91c36de001)
     )
@@ -11441,16 +11441,6 @@
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 4b90085f-4506-49bd-9c54-b2e9d8d97eb6)
     )
-    (fp_line (start -1.4 1.73) (end -1.4 3.02) (layer "F.SilkS") (width 0.12) (tstamp 0535bd67-2091-481e-9f4b-52e03a5fba8d))
-    (fp_line (start -3.45 -0.07) (end -3.45 0.72) (layer "F.SilkS") (width 0.12) (tstamp 0cf50e68-99a9-43b2-beb9-c3f4cc912f8a))
-    (fp_line (start -2.85 1.73) (end 2.85 1.73) (layer "F.SilkS") (width 0.12) (tstamp 21df6b5b-1819-4704-a101-aec7a6afa502))
-    (fp_line (start -1.4 3.02) (end -1.2 3.23) (layer "F.SilkS") (width 0.12) (tstamp 364890ab-9277-4eea-b5c9-cfec4b4e452b))
-    (fp_line (start -1.2 3.23) (end -0.3 3.23) (layer "F.SilkS") (width 0.12) (tstamp 3648e269-c30e-4540-88f4-c0a0f200e0d2))
-    (fp_line (start 1.4 -1.12) (end 1.6 -1.12) (layer "F.SilkS") (width 0.12) (tstamp 3866500f-3585-4c78-901e-9b15963772a2))
-    (fp_line (start 3.45 0.72) (end 3.45 -0.07) (layer "F.SilkS") (width 0.12) (tstamp 522d5b4e-7c1a-435b-9c8d-7202c52019ed))
-    (fp_line (start -0.1 3.02) (end -0.3 3.23) (layer "F.SilkS") (width 0.12) (tstamp 7d84f4b4-819d-4ea7-b2fe-62f252f7b2e0))
-    (fp_line (start -0.1 3.02) (end -0.1 1.73) (layer "F.SilkS") (width 0.12) (tstamp c27ab623-2ba1-44eb-96ae-d8b6fca08a6c))
-    (fp_line (start -1.6 -1.12) (end 0.1 -1.12) (layer "F.SilkS") (width 0.12) (tstamp f65021b7-f6e5-44c8-b5bc-f4cceb51b348))
     (fp_line (start 1.65 3.4) (end -1.65 3.4) (layer "F.CrtYd") (width 0.05) (tstamp 0adaf3f5-6fcc-4636-9939-4a478dec191a))
     (fp_line (start 4.4 2.1) (end 1.65 2.1) (layer "F.CrtYd") (width 0.05) (tstamp 16c59085-a6c5-4949-b0d2-058a13f277ec))
     (fp_line (start 4.4 -2.45) (end 4.4 2.1) (layer "F.CrtYd") (width 0.05) (tstamp 2565ed23-aa46-4770-9604-27a9d2715ce8))
@@ -11662,11 +11652,11 @@
     (tedit 0) (tstamp 9da6cefe-7b43-497d-aaa6-73d2d567b877)
     (at 58.31 -11.195)
     (attr through_hole)
-    (fp_text reference "Ref**" (at 0 0) (layer "F.SilkS") hide
+    (fp_text reference "GR6" (at 0 0) (layer "F.SilkS") hide
       (effects (font (size 1.27 1.27) (thickness 0.15)))
       (tstamp 72a31120-cfbe-4849-aec6-a2e717594dcd)
     )
-    (fp_text value "Val**" (at 0 0) (layer "F.SilkS") hide
+    (fp_text value "" (at 0 0) (layer "F.SilkS") hide
       (effects (font (size 1.27 1.27) (thickness 0.15)))
       (tstamp 8af8d9e0-686e-4283-b143-c5b9ab785cdc)
     )
@@ -16407,12 +16397,6 @@
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 990bbb1e-e4af-46ce-a2ce-22b03aebc55b)
     )
-    (fp_line (start -1.06 1) (end -1.06 7.06) (layer "F.SilkS") (width 0.12) (tstamp 4c869b94-8745-4cff-a708-2b4db13a4bf6))
-    (fp_line (start 1.06 1) (end 1.06 7.06) (layer "F.SilkS") (width 0.12) (tstamp 5d3b2a88-3053-4047-98fd-883b77e7fe8f))
-    (fp_line (start -1.06 -1.06) (end 0 -1.06) (layer "F.SilkS") (width 0.12) (tstamp 882165d7-0d20-4f07-a723-e7a32e170eef))
-    (fp_line (start -1.06 1) (end 1.06 1) (layer "F.SilkS") (width 0.12) (tstamp 9191d309-53de-4a4d-9d0d-42c0517e891b))
-    (fp_line (start -1.06 7.06) (end 1.06 7.06) (layer "F.SilkS") (width 0.12) (tstamp 9fcbb68c-dde7-493f-8677-173c05b255d9))
-    (fp_line (start -1.06 0) (end -1.06 -1.06) (layer "F.SilkS") (width 0.12) (tstamp c7c26be6-3ae7-406b-9e6c-85002dbcc202))
     (fp_line (start 1.5 7.5) (end 1.5 -1.5) (layer "F.CrtYd") (width 0.05) (tstamp 456566e5-4a6c-4840-b241-38d78bdd335f))
     (fp_line (start -1.5 -1.5) (end -1.5 7.5) (layer "F.CrtYd") (width 0.05) (tstamp 56e94a8e-3cd5-442c-8f03-51c5a442538b))
     (fp_line (start -1.5 7.5) (end 1.5 7.5) (layer "F.CrtYd") (width 0.05) (tstamp 59ad4c52-a1db-429b-ab90-2403dcce7c01))
@@ -17020,7 +17004,7 @@
     (descr "splitkb.com Tenting puck https://splitkb.com/products/tenting-puck")
     (tags "splitkb tenting puck")
     (attr through_hole)
-    (fp_text reference "REF**" (at 7.6835 1.4605 3) (layer "F.Fab")
+    (fp_text reference "TENT1" (at 7.6835 1.4605 3) (layer "F.Fab")
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 4cbb4646-e457-49d5-bd27-b95032220a17)
     )
@@ -17308,7 +17292,7 @@
   (footprint "clipboard:9b7f651c-c6a4-4f53-b457-ec411c8fc700" (layer "B.Cu")
     (tedit 0) (tstamp c12a0cc0-a67e-4cf6-9430-009bd8e6acf3)
     (at 5.669519 -6.351834 -175)
-    (fp_text reference "" (at 0 0 5) (layer "B.SilkS")
+    (fp_text reference "GR2" (at 0 0 5) (layer "B.SilkS")
       (effects (font (size 1.27 1.27) (thickness 0.15)) (justify mirror))
       (tstamp 182dbc24-e059-4b97-b7d1-3019713cfb88)
     )
@@ -17846,16 +17830,6 @@
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
       (tstamp 08895aac-0eaf-4885-9893-39d7cbab257b)
     )
-    (fp_line (start -3.45 0.07) (end -3.45 -0.72) (layer "B.SilkS") (width 0.12) (tstamp 251bbd6b-00ad-4956-8621-28b4b522b62b))
-    (fp_line (start -2.85 -1.73) (end 2.85 -1.73) (layer "B.SilkS") (width 0.12) (tstamp 8699357b-081e-4490-9c44-11d25a40de14))
-    (fp_line (start -0.1 -3.02) (end -0.1 -1.73) (layer "B.SilkS") (width 0.12) (tstamp 8b8cbcc8-2fab-4017-82d7-9e2b0dd87d55))
-    (fp_line (start -1.4 -1.73) (end -1.4 -3.02) (layer "B.SilkS") (width 0.12) (tstamp b9937346-f6e7-4a0d-8b88-940809bc0c5f))
-    (fp_line (start 1.4 1.12) (end 1.6 1.12) (layer "B.SilkS") (width 0.12) (tstamp c40d36bb-2efa-4bc3-859b-223faaa66f3e))
-    (fp_line (start -1.4 -3.02) (end -1.2 -3.23) (layer "B.SilkS") (width 0.12) (tstamp d0164702-426e-4c87-abe5-fbfeda4c6ede))
-    (fp_line (start -1.2 -3.23) (end -0.3 -3.23) (layer "B.SilkS") (width 0.12) (tstamp d205f026-5c37-4a8f-96d0-c67ab0976f34))
-    (fp_line (start -1.6 1.12) (end 0.1 1.12) (layer "B.SilkS") (width 0.12) (tstamp eccdf86f-23ac-4077-b13e-27dc356e9a70))
-    (fp_line (start 3.45 -0.72) (end 3.45 0.07) (layer "B.SilkS") (width 0.12) (tstamp f686f314-e4c1-4c2d-a83a-58da96d3edf9))
-    (fp_line (start -0.1 -3.02) (end -0.3 -3.23) (layer "B.SilkS") (width 0.12) (tstamp f82b8be3-e209-4493-8527-8e48e4d9c1ce))
     (fp_line (start 1.65 -3.4) (end -1.65 -3.4) (layer "B.CrtYd") (width 0.05) (tstamp 5b1cf420-b469-4a8f-a998-9abdfd8b7687))
     (fp_line (start 1.65 -2.1) (end 1.65 -3.4) (layer "B.CrtYd") (width 0.05) (tstamp 60e61964-6ea7-468c-b4d5-c464c2964fb4))
     (fp_line (start -4.4 2.45) (end 4.4 2.45) (layer "B.CrtYd") (width 0.05) (tstamp ae9a2cfc-2e02-4731-9394-e388bba596f8))
