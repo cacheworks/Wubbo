@@ -355,7 +355,7 @@
   (footprint "clipboard:9b7f651c-c6a4-4f53-b457-ec411c8fc700" (layer "F.Cu")
     (tedit 0) (tstamp 08061757-e97d-44f5-8d48-8244170fd8ab)
     (at -4.691213 -5.507578 5)
-    (fp_text reference "GR1" (at 0 0 5) (layer "F.SilkS")
+    (fp_text reference "GR1" (at 0 0 5) (layer "F.SilkS") hide
       (effects (font (size 1.27 1.27) (thickness 0.15)))
       (tstamp f9f11cb2-e4b7-4f72-873f-cbf908dae7b3)
     )
@@ -17292,7 +17292,7 @@
   (footprint "clipboard:9b7f651c-c6a4-4f53-b457-ec411c8fc700" (layer "B.Cu")
     (tedit 0) (tstamp c12a0cc0-a67e-4cf6-9430-009bd8e6acf3)
     (at 5.669519 -6.351834 -175)
-    (fp_text reference "GR2" (at 0 0 5) (layer "B.SilkS")
+    (fp_text reference "GR2" (at 0 0 5) (layer "B.SilkS") hide
       (effects (font (size 1.27 1.27) (thickness 0.15)) (justify mirror))
       (tstamp 182dbc24-e059-4b97-b7d1-3019713cfb88)
     )
