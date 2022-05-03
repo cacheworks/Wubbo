@@ -1,4 +1,4 @@
-## Wubbo
+![Wubbo header](./Artwork/Wubbo-github-header.png)
 A wireless 34 key keyboard with the top pinky keys moved to the 6th column.
 
 ### [Interactive Bill of materials](https://cacheworks.github.io/Wubbo/)
