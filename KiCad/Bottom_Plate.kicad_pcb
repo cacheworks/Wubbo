@@ -29361,7 +29361,6 @@
   (gr_circle (center 214.766 185.052) (end 215.866 185.052) (layer "Cmts.User") (width 0.1) (fill none) (tstamp 86359855-82b9-4b88-b24d-0cce9e35d2ed))
   (gr_circle (center 215.226 115.762) (end 216.326 115.762) (layer "Cmts.User") (width 0.1) (fill none) (tstamp 9d3ccc3f-3b98-4650-998a-594b38c6aef7))
   (gr_circle (center 149.742 169.558) (end 150.842 169.558) (layer "Cmts.User") (width 0.1) (fill none) (tstamp b9b56633-e27e-4ae9-b502-b04db674814a))
-  (gr_line (start 282 135.165) (end 278.5 126.415) (layer "Cmts.User") (width 0.1) (tstamp f1bf31f1-be51-4bf7-bd62-4c1691fb964a))
   (gr_circle (center 153.806 134.252) (end 154.906 134.252) (layer "Cmts.User") (width 0.1) (fill none) (tstamp fd23d600-64d7-41d7-a114-849a5c445d5c))
   (gr_arc (start 153.16163 183.482473) (mid 208.339709 190.325426) (end 262.416858 203.252467) (layer "Edge.Cuts") (width 0.15) (tstamp 12ffb73f-62d0-42c1-8932-5ebb64fff657))
   (gr_arc (start 271.985972 120.832154) (mid 272.095953 120.865313) (end 272.205916 120.898534) (layer "Edge.Cuts") (width 0.15) (tstamp 53d290a8-b212-4513-90cb-06afc49296a0))
