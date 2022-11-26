@@ -33,9 +33,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 0.6,
-          "height": 1.8,
-          "width": 1.0
+          "drill": 0.0,
+          "height": 2.6,
+          "width": 2.6
         },
         "silk_line_width": 0.12,
         "silk_text_italic": false,
@@ -55,7 +55,13 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        "courtyards_overlap|113640001|-15629999|63489ebf-0f52-43a6-a0ab-158b1a7d4988|e43299f0-2eea-47f9-be5b-2a309c38271d",
+        "courtyards_overlap|116079256|-40688078|8842a1fb-2e11-4100-86f1-f231b5825aca|9784dbc3-8aaa-433b-bdf3-3aab9db0333c",
+        "courtyards_overlap|116570001|-15649999|1f1dc877-213b-4e4d-b534-6b79b59a4122|63489ebf-0f52-43a6-a0ab-158b1a7d4988",
+        "courtyards_overlap|116576668|-15629999|1f1dc877-213b-4e4d-b534-6b79b59a4122|e43299f0-2eea-47f9-be5b-2a309c38271d",
+        "courtyards_overlap|121379806|-28589999|ce297cc5-ba1e-4bda-a461-cbd362d40e6f|d9bd50c5-028a-493a-8ac9-2dcf6441d81b"
+      ],
       "meta": {
         "version": 2
       },
@@ -76,7 +82,7 @@
         "item_on_disabled_layer": "error",
         "items_not_allowed": "error",
         "length_out_of_range": "error",
-        "malformed_courtyard": "error",
+        "malformed_courtyard": "warning",
         "microvia_drill_out_of_range": "error",
         "missing_courtyard": "ignore",
         "missing_footprint": "warning",
@@ -90,7 +96,7 @@
         "skew_out_of_range": "error",
         "through_hole_pad_without_hole": "error",
         "too_many_vias": "error",
-        "track_dangling": "warning",
+        "track_dangling": "error",
         "track_width": "error",
         "tracks_crossing": "error",
         "unconnected_items": "error",
@@ -373,6 +379,30 @@
         "track_width": 0.13,
         "via_diameter": 0.4,
         "via_drill": 0.2,
+        "wire_width": 6.0
+      },
+      {
+        "bus_width": 12.0,
+        "clearance": 0.15,
+        "diff_pair_gap": 0.25,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.2,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "Power",
+        "nets": [
+          "+3V3",
+          "+BATT",
+          "/BAT+_SWITCHED",
+          "/V-IN",
+          "VBUS"
+        ],
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.3,
+        "via_diameter": 0.8,
+        "via_drill": 0.4,
         "wire_width": 6.0
       }
     ],
